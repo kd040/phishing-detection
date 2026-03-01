@@ -24,5 +24,6 @@ def home():
                        probability=probability,
                        highlighted=highlighted,
                        risk_percentage=round(probability * 100, 2) if probability else 0)
-if __name__ == "__main__":
-    app.run(debug=True)
+
+ if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
